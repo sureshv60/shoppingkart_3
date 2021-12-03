@@ -1,0 +1,63 @@
+<div ng-if="products.length!=0">
+ <div class="container">
+  <div class="card-table">
+      <div class="cart-product">
+          <table class="table table-responsive">
+              <thead>
+                  <tr>
+                      <th>Sr.no</th>
+                      <th>Product Name</th>
+                      <th>Product Image</th>
+                      <th>Description</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr ng-repeat="item in products" key="{{$index}}">
+                      <td>{{$index+1}}</td>
+                      <td>{{item.title}}</td>
+                      <td><img style="width:120px;"src="{{item.image}}" alt=""></td>
+                      <td style="width:25%">{{item.description}}</td>
+                      <td style="width:12%">{{item.price}}</td>
+                      <td style="width:12%">{{item.quantity}}</td>
+                      <td style="width:12%">{{item.total}}</td>
+                      <td><button class="btn btn-danger" ng-click="removeItem(item)"><i class="fas fa-trash"></i>Delete</button></td>
+                  </tr>
+                  <tr>
+                      <td colspan="4"></td>
+                      <td><button class="btn btn-danger" ng-click="empty_cart()">Empty Cart</button></td>
+                      <td><button class="btn btn-primary" ng-click="redirect_to_shop()">Shop More</button></td>
+                      <td><button class="btn btn-success">Checkout</button></td>
+                      <td><strong>Grand Total {{grandTotal}}</strong></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div ng-if="products.length==0">
+    <div class="container">
+        <div class="card card-2">
+          <h5 class="card-title">My Cart</h5> 
+        </div>
+    
+        <div class="center center-2">
+            <img src="cart_empty_image.png" alt="">
+            <h4 class="h4-2">Your Cart is empty</h4>
+            <h6 class="h6-2">Add item to it now </h6>
+            <button class="btn btn-primary" ng-click="redirect_to_shop()">Shop</button>
+    
+    
+        </div>
+    </div>
+
+</div>

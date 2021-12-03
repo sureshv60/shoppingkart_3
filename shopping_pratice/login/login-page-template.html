@@ -1,0 +1,76 @@
+
+
+
+<div  ng-controller="logincontroller">
+  <div ng-if="showLogin"> 
+  <div class="loginform" ng-if="showpage=='login'">
+  <div class="col-md-6">
+    <div class="card-1">
+      <div class="text-center">
+        <h1>
+          Login
+        </h1>
+        <h6>Please enter email & password !!</h6>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="useremail1" class="form-label">Email address</label>
+          <input type="text" ng-model="lusername" class="form-control" id="useremail1" aria-describedby="emailHelp" >
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> 
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label" >Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" ng-model="lpassword">
+        </div>
+        
+        <button type="submit" class="btn btn-primary" ng-click="onloginclick(lusername,lpassword)">Submit</button>
+
+        <button type = "button" class = "btn btn-link" ng-click="setpageblock()">SignUp Here</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <div class="loginform" ng-if="showpage=='signup'">
+    <div class="col-md-6">
+      <div class="card-1">
+        <div class="text-center">
+          <h1>
+            Sign Up
+          </h1>
+          <h6>Register Yourself!!</h6>
+        </div>
+        <form>
+          
+          <div class="mb-3">
+            <label for="rusername" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="rusername" ng-model="rusername">
+          </div>
+
+          <div class="mb-3">
+            <label for="rphonenumber" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="rphonenumber" ng-model="rphonenumber">
+          </div>
+          
+          
+          <div class="mb-3">
+            <label for="remail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="remail" aria-describedby="emailHelp" ng-model="remail">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="rpassword" class="form-label">Password</label>
+            <input type="rpassword" class="form-control" id="rpassword" ng-model="rpassword">
+          </div>
+          
+          <button type="submit" class="btn btn-primary" ng-click="onsignupclick(rusername,remail,rpassword)">Signup</button>
+          <button type = "button" class = "btn btn-link" ng-click="setpageblock()">Login Here</button>
+        </form>
+      </div>
+    </div>
+    </div> 
+
+    
+</div>
+
+</div>

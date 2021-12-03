@@ -1,0 +1,157 @@
+.form-control-search{
+    border-radius: 3px;
+    width:600px;
+    margin-left: 20px;
+}
+
+.search-icon{
+    position: relative;
+    z-index: 10;
+    right: 4%;
+    top: 8px;
+    color: blue;
+}
+
+/***************products template styling *******************/
+
+.card-top{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:.25rem;
+
+}
+
+.item img{
+    width:64px;
+}
+
+.item a:hover{
+    color:blue;
+}
+
+.item{
+    margin:0px 15px;
+    text-align:center;
+
+}
+
+
+.-fx-image-gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+  }
+  .-fx-gal-item {
+    width: 350px; /* for 3 columns */
+    margin: 5px;
+    border-radius: 15px;
+  }
+
+
+.card img{
+    margin-bottom:15px;
+    transition: 0.3 ease-in-out;
+    width:300px;
+    height:400px;
+}
+
+.card img:hover{
+    transition: 0.3 ease-in-out;
+    transform:scale(1.1);
+}
+
+/*********************************************** Home page css *****************************************/
+
+.banner-image{
+    background-image: url(homepage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   display:block;
+   z-index:1;
+   background-attachment: fixed;
+   height:100vh;
+}
+
+
+
+/*********************************************** login page css*****************************************/
+
+.card-1{
+    border:5px solid blue;
+    color:#fff;
+    border:none;
+    width:500px;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(205,46%,30%,1);
+    background:linear-gradient(90deg,hsla(205,46%,30%,1) 0%,hsla(260,29%,36%,1) 100%);
+}
+
+    
+
+
+/************************************* Cart Page css ************************************************************/
+
+
+.card-2{
+    height: 60vh;
+    margin: 25px;
+    padding: 25px;
+}
+
+
+.center-2{
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+
+.center-2 img{
+    text-decoration:none;
+    color:inherit;
+    border:none;
+    outline:none;
+    height: 162px;
+    width:250px;
+    margin:20px 0px;
+
+}
+
+.center-2 .btn{
+    font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight:400;
+    padding:12px 72px;
+    border-radius: 3px !important;
+}
+.h4-2,.h6-2{
+
+    font-weight: 400;
+}
+
+.card-table{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    min-width:none;
+    word-wrap:break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius:.25rem;
+}
